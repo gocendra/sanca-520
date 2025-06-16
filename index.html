@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Scout San Cayetano N°520</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img class="imagen-logo" src="golden-fleur-de-lys-emblem-free-png.webp" alt="Imagen 1">
+    <h1>Grupo Scout San Cayetano N°520</h1>
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="manada.html">Manada</a></li>
+            <li><a href="unidad.html">Unidad</a></li>
+            <li><a href="caminantes.html">Caminantes</a></li>
+            <li><a href="rovers.html">Rovers</a></li>
+            <li><a href="quintuches.html">Quintuches</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section class="carousel">
+  <div class="carousel-track">
+    <img src="logoscoutarg1.jpg" alt="Imagen 1">
+    <img src="logoscoutarg.webp" alt="Imagen 2">
+    <img src="img3.jpg" alt="Imagen 3">
+  </div>
+</section>
+
+  <main>
+    <section class="bienvenida">
+      <h1>Quienes Somos</h1>
+      <p class="texto">Somos una comunidad comprometida con la formación de jóvenes a través del escultismo.</p>
+    </section>
+    <div class="galeria2">
+        <img src="img1.jpg" alt="Foto 1">
+        <img src="img2.jpg" alt="Foto 2">
+        <img src="img3.jpg" alt="Foto 3">
+        <img src="img4.jpg" alt="Foto 4">
+        <img src="img5.jpg" alt="Foto 5">
+        <img src="img6.jpg" alt="Foto 6">
+        <img src="img7.jpg" alt="Foto 7">
+        <img src="img8.jpg" alt="Foto 8">
+        <img src="img9.jpg" alt="Foto 9">
+        <img src="img10.jpg" alt="Foto 10">
+        <img src="img11.jpg" alt="Foto 11">
+        <img src="img12.jpg" alt="Foto 12">
+    </div>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <form id="form-contacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button class="btn-donar" type="submit">Enviar</button>
+      </form>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d725.9584282545449!2d-65.09031013040467!3d-43.296803922124084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe015702c5cce09f%3A0x1ead4e2176c05484!2sCapilla%20San%20Cayetano!5e0!3m2!1ses-419!2sar!4v1750105194495!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+    <div class="donar-contenedor">
+  <button class="btn-donar" onclick="abrirModal()">Donar</button>
+</div>  
+<div id="modal-donacion" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2>Información para Donar</h2>
+    <p><strong>Banco:</strong> Banco Ejemplo</p>
+    <p><strong>Cuenta:</strong> 123456789</p>
+    <p><strong>Titular:</strong> Nombre Apellido</p>
+    <p><strong>CBU:</strong> 0000003100001234567890</p>
+    <p><strong>Alias:</strong> donaciones.ejemplo</p>
+  </div>
+</div>
+  <footer>
+    <div class="menu-navegacion">
+        <a href="#" class="icon facebook">Facebook</a>
+        <a href="#" class="icon instagram">Instagram</a>
+        <a href="#" class="icon youtube">YouTube</a>
+    </div>
+    <p>&copy; 2025 Grupo Scout San Cayetano N°520</p>
+  </footer>
+
+<script>
+function abrirModal() {
+  document.getElementById('modal-donacion').style.display = 'block';
+}
+function cerrarModal() {
+  document.getElementById('modal-donacion').style.display = 'none';
+}
+</script>
+</body>
+</html>
