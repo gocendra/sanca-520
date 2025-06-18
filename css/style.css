@@ -86,7 +86,7 @@ main {
 
 .carousel {
   position: relative;
-  width: 50%;
+  width: 20%;
   margin: 0 auto;
   overflow: hidden;
   background-color: white;
@@ -369,13 +369,13 @@ footer {
   font-size: 20px;
 }
 .imagen-logo {
-  width: 100px;
+  width: 150px;
 }
 .mapa-responsive {
   max-width: 600px;       /* ancho máximo igual al original */
   margin: 0 auto;         /* centra el contenedor */
   position: relative;
-  padding-bottom: 50%;    /* relación de aspecto 4:3 (450/600 = 0.75) */
+  padding-bottom: 30%;    /* relación de aspecto 4:3 (450/600 = 0.75) */
   height: 0;
   overflow: hidden;
 }
